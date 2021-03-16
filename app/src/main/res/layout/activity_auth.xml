@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pattern_background"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_dialog"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            app:srcCompat="@drawable/ic_islimi_half"
+            android:scaleType="fitXY"
+            tools:ignore="VectorDrawableCompat" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_back"
+            android:orientation="vertical"
+            >
+
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:custom_typeface="@string/font_bold"
+                android:layout_gravity="center"
+                android:text="تسجيل الدخول إلى التطبيق"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/title"
+                android:textSize="@dimen/textsize1"
+                android:layout_marginTop="10dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#C4C4C6"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                android:id="@+id/content_card"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    >
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="@string/signExplain"
+                        android:textSize="@dimen/dialog_content"
+                        app:custom_typeface="@string/font_medium"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="@dimen/backImage"
+                    android:layout_height="@dimen/backImage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/phoneNumberBack"
+                    app:srcCompat="@drawable/ic_back_activity"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/phoneNumberBack"
+                    tools:ignore="VectorDrawableCompat" />
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNumberBack"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="09392552911"
+                android:gravity="center"
+                android:textColor="#AEAFB1"
+                android:textSize="@dimen/dialog_content"
+                app:custom_typeface="@string/font_medium"
+                />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_input"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="15dp">
+            <com.thebrownarrow.customfont.CustomFontEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:custom_typeface="@string/font_bold"
+                android:layout_gravity="center"
+                android:textColor="#AEAFB1"
+                android:id="@+id/email"
+                android:textColorHint="#AEAFB1"
+                android:backgroundTint="#AEAFB1"
+                android:hint="@string/input_login_mail"
+                android:inputType="textEmailAddress"
+                android:gravity="center"
+                android:textSize="@dimen/dialog_content"
+                android:background="@color/transparent"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_input"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="15dp">
+                <com.thebrownarrow.customfont.CustomFontEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:custom_typeface="@string/font_bold"
+                    android:layout_gravity="center"
+                    android:textColor="#AEAFB1"
+                    android:id="@+id/pass"
+                    android:textColorHint="#AEAFB1"
+                    android:backgroundTint="#AEAFB1"
+                    android:hint="@string/input_login_pass"
+
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textSize="@dimen/dialog_content"
+                    android:background="@color/transparent"
+
+                    />
+            </LinearLayout>
+
+
+
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:id="@+id/dialog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#AEAFB1"
+                android:textSize="@dimen/dialog_content"
+                app:custom_typeface="@string/font_medium"
+                />
+            <RelativeLayout
+                android:layout_width="@dimen/rv_width"
+                android:layout_height="@dimen/rv_height"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/pay_btn"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/button"
+                    android:layout_alignParentRight="true" />
+                <com.thebrownarrow.customfont.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/signin"
+                    android:textColor="#fff"
+                    android:id="@+id/btn_title"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/dialog_content"
+                    app:custom_typeface="@string/font_bold"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            app:srcCompat="@drawable/ic_slimi_half_bottom"
+            android:scaleType="fitXY"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+</RelativeLayout>

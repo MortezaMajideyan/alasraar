@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "532410757295",
+    "firebase_url": "https://alasrar-c1138.firebaseio.com",
+    "project_id": "alasrar-c1138",
+    "storage_bucket": "alasrar-c1138.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532410757295:android:31e8d42cde299c6a32645a",
+        "android_client_info": {
+          "package_name": "com.pattern.alasraar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532410757295-m90sn5t9mqk25lm6hd8oslqjgerndkgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pattern.alasraar",
+            "certificate_hash": "c36c8dc948a47ee27c30d2c8d897ced779129689"
+          }
+        },
+        {
+          "client_id": "532410757295-5u5otrmdj81f7kjnbd722jokkhsa2ej6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1UbCXT5eICn-2FQMO1IixuuDqmYDVs5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532410757295-lcqe2u3u6vf2hs0orucqntcvh03kckki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

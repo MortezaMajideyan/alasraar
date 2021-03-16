@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pattern_background"
+        android:scaleType="centerCrop"
+        />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/eghamat_back"
+            app:srcCompat="@drawable/ic_back_activity"
+            />
+
+        <com.thebrownarrow.customfont.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/pishgoo"
+            android:textColor="#fff"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            app:custom_typeface="@string/font_light" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shape_circle_dark"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="30dp"
+        android:id="@+id/icon_layout"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_pishgoo"
+            />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#D8D8D8"
+        android:id="@+id/info"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:custom_typeface="@string/font_bold"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:text="@string/lastUpdate"
+                android:gravity="center"
+                android:textSize="@dimen/dialog_content"
+
+                />
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:custom_typeface="@string/font_bold"
+                android:layout_gravity="center"
+                android:id="@+id/lastUpdate"
+                android:text=""
+                android:gravity="center"
+                android:textSize="@dimen/dialog_content"
+
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layoutDirection="rtl"
+                android:id="@+id/rv"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/progress"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/problem"
+        android:visibility="gone"
+        >
+        <com.thebrownarrow.customfont.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_typeface="@string/font_bold"
+            android:layout_gravity="center"
+            android:textColor="#ffff"
+            android:layout_margin="15dp"
+            android:id="@+id/dialog_content"
+            android:text="@string/problem"
+            android:gravity="center"
+            android:textSize="@dimen/dialog_content"
+
+            />
+        <RelativeLayout
+            android:layout_width="@dimen/rv_width"
+            android:layout_height="@dimen/rv_height"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/try_btn"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/button"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/tryAgain"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/dialog_content"
+                app:custom_typeface="@string/font_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

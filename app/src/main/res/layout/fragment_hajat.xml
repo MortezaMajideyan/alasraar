@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern_background"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ghaeb_back"
+                    android:layout_width="@dimen/image_back_w"
+                    android:layout_height="@dimen/image_back_h"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/ic_back_activity"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <com.thebrownarrow.customfont.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="@string/rava_hajat"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_size_input"
+                    app:custom_typeface="@string/font_light" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/icon_layout"
+                    android:layout_width="@dimen/image_size_head"
+                    android:layout_height="@dimen/image_size_head"
+                    android:background="@drawable/shape_circle_dark"
+                    android:padding="@dimen/image_padding_head">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_need"
+                        tools:ignore="VectorDrawableCompat" />
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_card"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/margin_left_right_card"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="#D8D8D8"
+                    app:cardCornerRadius="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/margin_left_right_card"
+                        android:paddingRight="@dimen/margin_left_right_card"
+                        android:paddingBottom="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp">
+
+                            <com.thebrownarrow.customfont.CustomFontEditText
+                                android:id="@+id/hajat_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:hint="@string/name"
+                                android:importantForAutofill="no"
+                                android:lines="1"
+                                android:maxLength="25"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textSize="@dimen/font_size_input"
+                                app:custom_typeface="@string/font_light" />
+
+                            <RelativeLayout
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape_rectangle">
+
+                                <com.thebrownarrow.customfont.CustomFontTextView
+                                    android:id="@+id/hajat_name_sum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/font_size_input"
+                                    app:custom_typeface="@string/font_light" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <com.thebrownarrow.customfont.CustomFontEditText
+                                android:id="@+id/hajat_target_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:hint="@string/target"
+                                android:importantForAutofill="no"
+                                android:lines="1"
+                                android:maxLength="25"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textSize="@dimen/font_size_input"
+                                app:custom_typeface="@string/font_light" />
+
+                            <RelativeLayout
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape_rectangle">
+
+                                <com.thebrownarrow.customfont.CustomFontTextView
+                                    android:id="@+id/hajat_target_name_sum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/font_size_input"
+                                    app:custom_typeface="@string/font_light" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center">
+
+                            <com.thebrownarrow.customfont.CustomFontEditText
+                                android:id="@+id/hajat_detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:hint="@string/hajat"
+                                android:importantForAutofill="no"
+                                android:lines="1"
+                                android:maxLength="25"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textSize="@dimen/font_size_input"
+                                app:custom_typeface="@string/font_light" />
+
+                            <RelativeLayout
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape_rectangle">
+
+                                <com.thebrownarrow.customfont.CustomFontTextView
+                                    android:id="@+id/hajat_detail_sum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/font_size_input"
+                                    app:custom_typeface="@string/font_light" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/ghaeb_natijeh"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/button" />
+
+                            <com.thebrownarrow.customfont.CustomFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/natijeh"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/font_size_input"
+                                app:custom_typeface="@string/font_bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

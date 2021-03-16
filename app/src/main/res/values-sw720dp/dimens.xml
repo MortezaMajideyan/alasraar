@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_dialog">100dp</dimen>
+    <dimen name="image_height">120dp</dimen>
+    <dimen name="image_logo">180dp</dimen>
+    <dimen name="textsize">25sp</dimen>
+    <dimen name="textsize1">27sp</dimen>
+    <dimen name="dialog_content">25sp</dimen>
+    <dimen name="rv_height">60dp</dimen>
+    <dimen name="rv_width">200dp</dimen>
+    <dimen name="rv_item_height">200dp</dimen>
+    <dimen name="rv_item_width">80dp</dimen>
+    <dimen name="backImage">25dp</dimen>
+    <dimen name="margin_bottom_item">14dp</dimen>
+
+
+    <dimen name="height_item_date">40dp</dimen>
+    <dimen name="width_item_date">50dp</dimen>
+
+    <dimen name="image_size_head">200dp</dimen>
+    <dimen name="image_padding_head">20dp</dimen>
+    <dimen name="font_size_input">20sp</dimen>
+    <dimen name="height_toggle">50dp</dimen>
+    <dimen name="width_toggle">300dp</dimen>
+    <dimen name="text_size_toggle">27sp</dimen>
+
+    <dimen name="image_back_h">40dp</dimen>
+    <dimen name="image_back_w">60dp</dimen>
+
+    <dimen name="btn_submit_w">220dp</dimen>
+    <dimen name="btn_submit_h">100dp</dimen>
+    <dimen name="drop_icon_h">20dp</dimen>
+    <dimen name="drop_icon_w">20dp</dimen>
+    <dimen name="margin_top_con">150dp</dimen>
+    <dimen name="margin_left_right_card">10dp</dimen>
+
+</resources>

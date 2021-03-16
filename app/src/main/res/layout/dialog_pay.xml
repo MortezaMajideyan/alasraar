@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern_background"
+    android:padding="@dimen/padding_dialog"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        app:srcCompat="@drawable/ic_islimi_half"
+        android:scaleType="fitXY"
+        tools:ignore="VectorDrawableCompat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_back"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/image_logo"
+                android:layout_height="@dimen/image_logo"
+                app:srcCompat="@drawable/ic_dialog_sarketab"
+                />
+            <com.thebrownarrow.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:custom_typeface="@string/font_bold"
+                android:layout_centerVertical="true"
+                android:text="@string/sarketab"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="@dimen/textsize"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <com.thebrownarrow.customfont.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_typeface="@string/font_bold"
+            android:layout_gravity="center"
+            android:text="پرداخت"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/dialogTitle"
+            android:textSize="@dimen/textsize1"
+            android:layout_marginTop="10dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#C4C4C6"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            android:id="@+id/content_card"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <com.thebrownarrow.customfont.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:custom_typeface="@string/font_bold"
+                    android:layout_gravity="center"
+                    android:textColor="#757575"
+                    android:id="@+id/dialog_content"
+                    android:text="اضافه شدن بخش های جدید ،
+بر طرف کردن برخی باگ های نرم افزار"
+                    android:gravity="center"
+                    android:textSize="@dimen/dialog_content"
+
+                    />
+
+                <com.thebrownarrow.customfont.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:custom_typeface="@string/font_bold"
+                    android:layout_gravity="center"
+                    android:textColor="#cb9e69"
+                    android:id="@+id/signout"
+                    android:text="تغییر اکانت"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/dialog_content"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="@dimen/rv_width"
+                    android:layout_height="@dimen/rv_height"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/update_btn"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/button"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                    <com.thebrownarrow.customfont.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/update"
+                        android:textColor="#fff"
+                        android:id="@+id/dialog_btn_text"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/dialog_content"
+                        app:custom_typeface="@string/font_bold"
+                        android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        app:srcCompat="@drawable/ic_slimi_half_bottom"
+        android:scaleType="fitXY"
+        tools:ignore="VectorDrawableCompat" />
+
+</LinearLayout>

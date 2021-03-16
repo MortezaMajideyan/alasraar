@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/month"
+    >
+    <RelativeLayout
+        android:minWidth="@dimen/rv_item_height"
+        android:minHeight="@dimen/rv_item_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/rv_back"
+        >
+        <com.thebrownarrow.customfont.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="اردیبهشت"
+            android:id="@+id/month_title"
+            android:layout_marginStart="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dialog_content"
+            app:custom_typeface="@string/font_bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
